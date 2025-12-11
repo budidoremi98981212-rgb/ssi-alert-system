@@ -1,0 +1,24 @@
+feat(web): tambah dashboard Auto‑Alert SSI (bilingual + dark/light)
+
+- index.html: layout + KPI + simulasi personel + antibiotik
+- css/style.css: tema dark/light
+- js/app.js: logika alert, i18n, ekspor/impor CSV, beep
+- assets/: logo & favicon
+- data/sample_logs.csv: data contoh
+- README.md: cara deploy ke GitHub Pages
+
+# 1) Siapkan folder kerja berisi isi auto-alert-ssi/
+unzip auto-alert-ssi.zip
+cd auto-alert-ssi
+
+# 2) Clone repo GitHub
+git clone https://github.com/budidoremi98981212-rgb/ssi-alert-system.git
+cd ssi-alert-system
+
+# 3) Salin semua file app ke root repo
+# (sesuaikan path jika Anda mengekstrak di lokasi berbeda)
+cp -r ../auto-alert-ssi/* .
+
+# 4) Commit & push
+git add .
+git commit -m "feat(web): tambah dashboard Auto-Alert SSI (bilingual + dark/light)"
